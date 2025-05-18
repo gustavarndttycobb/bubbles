@@ -1,65 +1,50 @@
-# Storybook - Expo NativeWind Boilerplate
+# Welcome to your Expo app 👋
 
-React Native Expo boilerplate to design RN Components with [Storybook](https://storybook.js.org/), for Native **AND** Web, using [NativeWind](https://www.nativewind.dev/v4/overview) styling (Reanimated included for animations).
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-This is based on [dannyhw/expo-template-storybook](https://github.com/dannyhw/expo-template-storybook) with NativeWind on top. 🧂
+## Get started
 
-![image](https://user-images.githubusercontent.com/3481514/145904252-92e3dc1e-591f-410f-88a1-b4250f4ba6f2.png)
+1. Install dependencies
 
-# Getting Started
+   ```bash
+   npm install
+   ```
 
-```sh
-npx create-expo-app --template expo-nativewind-template-storybook AwesomeStorybookForAllPlatforms
+2. Start the app
+
+   ```bash
+   npx expo start
+   ```
+
+In the output, you'll find options to open the app in a
+
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
+
+```bash
+npm run reset-project
 ```
 
-# App
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-This will start your regular RN App.
+## Learn more
 
-```sh
-yarn start
-```
+To learn more about developing your project with Expo, look at the following resources:
 
-# Storybook
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-To start the Storybook instance, you have 2 options:
-- ondevice: run the React Native version of your components. Best for: native, but works for web as well (no hot-reloading on the web)
-- web: run a full Storybook version with more advanced features, including hot-reloading for Web. Doesn't run on native devices.
+## Join the community
 
-# Ondevice
+Join our community of developers creating universal apps.
 
-In this template you can now run `yarn storybook` to start ondevice storybook or `yarn start` to start your expo app.
-This works via env variables and expo constants.
-
-```sh
-# either
-yarn storybook
-
-# ios
-yarn storybook:ios
-
-# android
-yarn storybook:android
-```
-
-If you add new stories on the native (ondevice version) you either need to have the watcher running or run the stories loader
-
-To update the stories one time
-
-```sh
-yarn storybook-generate
-```
-
-# Web
-
-Start react native web storybook:
-
-```
-yarn storybook:web
-```
-
-build react native web storybook:
-
-```sh
-yarn build-storybook
-```
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
