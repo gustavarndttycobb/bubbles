@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --background: #fff;
+    --primary: #0070f3;
+    --secondary: #e88915;
+    --text-primary: #000000;
+    --text-secondary: #090376;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #000;
+        --primary: #0070f3;
+        --secondary: #e88915;
+        --text-primary: #fff;
+        --text-secondary: #090376;
+    }
+}

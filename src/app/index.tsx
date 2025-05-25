@@ -1,7 +1,7 @@
-import ExampleComponent from "@/common/components/ExampleComponent/ExampleComponent";
 import { fetchExample } from "@/common/services/api";
 import { IExampleMock } from "@/common/services/mocks/exampleMock";
-import { useEffect, useState } from "react";
+import { useTheme } from "@react-navigation/native";
+import React, { useEffect, useState } from "react";
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -18,15 +18,11 @@ export default function Index() {
 
         exampleData();
     }, []);
-    return (
-        <View>
-            <Text>Example component</Text>
-            <ExampleComponent />
-            <Text>Mock api service example</Text>
-            {example.map((item) => (
-                <Text key={item.id}>{item.label}</Text>
-            ))}
 
+    const { colors } = useTheme();
+    return (
+        <View className="bg-background flex-1 items-center justify-center">
+            <Text className="text-textPrimary font-bold text-xl">Home</Text>
         </View>
     );
 }
