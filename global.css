@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* To setup dark and light theme colors just update here and create the variables in tailwind.config.js */
 :root {
     --background: #fff;
     --primary: #0070f3;
